@@ -10,8 +10,8 @@ export const BreedsSelect = ({breeds,selectedBreed,onBreedChange}) => {
         <>
             <select value={selectedBreed} onChange={onBreedChange}>
                 <option value=""></option>
-                {Object.values(breeds).map((breed, index) => (
-                    <option key={index} value={breed}>
+                {Object.values(breeds).map((breed) => (
+                    <option key={breed} value={breed}>
                         {breed}
                     </option>
                     ))};
